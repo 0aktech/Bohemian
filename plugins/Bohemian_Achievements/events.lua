@@ -25,6 +25,10 @@ function A:CHAT_MSG_ACHIEVEMENT(...)
     --print("CHAT_MSG_ACHIEVEMENT", ...)
 end
 
+---
+--- Another thing that should be configurable in the UI. Do you want to present your achievements earned to others or not?
+--- We had numerous complaints about the addon spamming our guild chat.
+---
 function A:ACHIEVEMENT_EARNED(id)
     local link = GetAchievementLink(id)
     SendChatMessage(format("has earned the achievement %s!", link), "GUILD")
