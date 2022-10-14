@@ -156,15 +156,15 @@ end
 
 function E:SetDKPFromEditBox(editBox)
     local dkp, reason, percent = self:GetDKPFromEditBox(editBox)
-    self:SetDKP(GetGuildRosterSelection(), dkp, "GUILD", reason, percent)
+    self:SetDKP(GetGuildRosterSelection(), dkp, "OFFICER", reason, percent)
 end
 function E:AddDKPFromEditBox(editBox)
     local dkp, reason, percent = self:GetDKPFromEditBox(editBox)
-    self:AddDKP(GetGuildRosterSelection(), dkp, "GUILD", reason, percent)
+    self:AddDKP(GetGuildRosterSelection(), dkp, "OFFICER", reason, percent)
 end
 function E:SubtractDKPFromEditBox(editBox)
     local dkp, reason, percent = self:GetDKPFromEditBox(editBox)
-    self:SubtractDKP(GetGuildRosterSelection(), dkp, "GUILD", reason, percent)
+    self:SubtractDKP(GetGuildRosterSelection(), dkp, "OFFICER", reason, percent)
 end
 
 function E:AdjustRaidFrame()
